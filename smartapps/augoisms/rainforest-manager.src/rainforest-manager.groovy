@@ -81,7 +81,7 @@ def createChild() {
 	} else {
         try {
         	log.debug "attempting to create child device"
-        	def newChild = addChildDevice("augoisms", "RainforestEagle", dni, theHub.id, [name:"RainforestEagle", label: "Power Meter"])
+        	def newChild = addChildDevice("augoisms", "Rainforest Handler", dni, theHub.id, [name:"RainforestEagle", label: "Power Meter"])
             log.trace "created ${newChild.displayName} with id $dni"
             schedule(newChild)
         }
